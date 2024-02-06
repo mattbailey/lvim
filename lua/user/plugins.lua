@@ -149,6 +149,17 @@ local M = {
     -- In Vim, compat mode is turned on as Lush only works in Neovim.
     dependencies = { "rktjmp/lush.nvim" }
   },
+  {
+    "leoluz/nvim-dap-go",
+    ft = "go",
+    config = function()
+      require("dap-go").setup()
+    end
+  },
+  {
+    "olexsmir/gopher.nvim",
+    ft = "go",
+  },
 }
 
 return M
