@@ -33,6 +33,9 @@ local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { name = "shfmt" },
 }
+
+-- Skipped languages list
+lvim.lsp.automatic_configuration.skipped_filetypes = { "rst", "plaintext" }
 -- keymappings <https://www.lunarvim.org/docs/master/configuration/keybindings>
 lvim.leader = "space"
 -- leader mappings
