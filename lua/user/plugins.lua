@@ -156,10 +156,8 @@ local M = {
       require("dap-go").setup()
     end
   },
-  {
-    "olexsmir/gopher.nvim",
-    ft = "go",
-  },
+  { "olexsmir/gopher.nvim", ft = "go" },
+  { "nickeb96/fish.vim",    ft = "fish" }
 }
 
 return M
